@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway   # oder 'github', 'gitlab', 'bitbucket'
+  branch: main        # dein Default-Branch
+
+media_folder: "public/img" # wohin Dateien im Repo geschrieben werden
+public_folder: "/img"      # wie sie im Frontend erreichbar sind
+
+collections:
+  - name: "content"
+    label: "Seiten"
+    folder: "content"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Beschreibung", name: "description", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    format: "frontmatter"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Beschreibung", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
