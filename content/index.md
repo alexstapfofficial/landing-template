@@ -7,8 +7,7 @@ seo:
     Websites spezialisiert hat.
   keywords: Webdesign, Entwicklung, Unterfranken, moderne Websites,
     benutzerfreundliche Websites
-title: "[Websiten]{.text-primary} technisch stark, optisch überzeugend dies ist
-  ein test."
+title: "[Websiten]{.text-primary} technisch stark, optisch überzeugend"
 description: Für Unternehmen, die auch online zeigen wollen, was sie wirklich
   können. Für den ersten Eindruck gibt es keine zweite Chance.
 image:
