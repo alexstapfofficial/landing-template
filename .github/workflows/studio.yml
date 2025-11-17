@@ -59,7 +59,7 @@ jobs:
         run: ${{ steps.pkgman.outputs.package_manager }} install
 
       - name: Generate
-        run: NODE_OPTIONS="--max_old_space_size=8192" ${{ steps.pkgman.outputs.package_manager }} run build
+        run: NODE_OPTIONS="--max_old_space_size=8192" ${{ steps.pkgman.outputs.package_manager }} npx nuxi generate
         env:
           NITRO_PRESET: github_pages
           NUXT_CONTENT_PREVIEW_API: https://api.nuxt.studio
